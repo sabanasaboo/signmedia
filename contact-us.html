@@ -263,7 +263,7 @@
                                 </div>
 
                                 <div class="comment-form pt-xl-8">
-                                    <form class="row gx-4" id="contactForm" action="https://htmlmail.hasthemes.com/saidul/seolly/contact.php" method="POST">
+                                    <form class="row gx-4" id="contactForm"  >
                                         <div class="col-12 col-sm-6">
                                             <input class="form-control" placeholder="Enter Your Name" type="text" name="name" />
                                         </div>
@@ -271,7 +271,7 @@
                                             <input class="form-control" placeholder="Enter Your Email" type="text" name="email" />
                                         </div>
                                         <div class="col-12">
-                                            <select id="inputState" class="form-select">
+                                            <select id="inputState" class="form-select" name="topic">
                                                 <option selected>Choose Topic</option>
                                                 <option>Web Design & Development</option>
                                                 <option>Digital Marketing</option>
@@ -285,7 +285,7 @@
                                             <textarea placeholder="Type your question" class="form-control textarea-control" name="message" id="textarea" cols="30" rows="10"></textarea>
                                         </div>
                                         <div class="col-12">
-                                            <button type="submit" class="btn btn-warning">
+                                            <button type="submit" class="btn btn-warning" id="submitBtnStatus">
                                                 Submit 
                                                 <i class="icofont-rounded-double-right"></i>
                                             </button>
@@ -296,7 +296,7 @@
                             </div>
                             <div class="col-12 mb-7">
                                
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2624543549978!2d80.13468413561287!3d12.95505044711673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fb102227b4f%3A0x82fe3195f7d9f7f3!2s34%2C%201st%20Main%20Rd%2C%20Nagappa%20Nagar%2C%20Chromepet%2C%20Chennai%2C%20Tamil%20Nadu%20600044!5e0!3m2!1sen!2sin!4v1707459539749!5m2!1sen!2sin" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe style="width: 100%;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.2624543549978!2d80.13468413561287!3d12.95505044711673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525fb102227b4f%3A0x82fe3195f7d9f7f3!2s34%2C%201st%20Main%20Rd%2C%20Nagappa%20Nagar%2C%20Chromepet%2C%20Chennai%2C%20Tamil%20Nadu%20600044!5e0!3m2!1sen!2sin!4v1707459539749!5m2!1sen!2sin" width="1000" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                             </div>
                         </div>
                     </div>
@@ -493,12 +493,55 @@
 
 
     <!-- Scripts -->
+    <script>
+    let form = document.getElementById('contactForm')
+    const btn = document.getElementById('submitBtnStatus')
+    form.addEventListener('submit',async(event)=>{
+        try {
+            event.preventDefault(); // Prevent the default form submission behavior
+        console.log('hi',event);
+        // console.log(this.elements['name']);
+        const formData = new FormData(form);
+        console.log( Object.fromEntries(formData.entries()));
+        const objData = Object.fromEntries(formData.entries())
+        console.log(Object.values(objData));
+
+        for(let x in objData){
+            console.log(objData[x].length===0);
+            if(objData[x].length===0 ||objData[x]==='Choose Topic'){
+                alert(`fill out the ${x} `)
+                return
+            }
+        }
+        
+        btn.textContent = 'loading...'
+        let response = await fetch('http://localhost:3000/smiEmail', {
+            method: 'POST',
+            body: Object.fromEntries(formData.entries())
+        })
+        // .then(response => response.json()) // assuming the server returns JSON
+        // .then(data => {
+            // Handle the server response data here
+            await setTimeout(()=>{btn.textContent = response.ok?'Sended': 'Retry'},3000)
+            setTimeout(()=>{btn.textContent='Submit'},7000)
+            
+            console.log('Server Response:', response);
+        // })
+        // .catch(error => {
+        // });
+    } catch (error) {
+            btn.textContent= `Retry or Check Connection`
+            console.log('Form submission error:', error);    
+        }
+
+    });
+    </script>
     <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
     <script src="assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
     <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
     <script src="assets/js/plugins/swiper-bundle.min.js"></script>
-    <script src="assets/js/ajax-contact.js"></script>
+    <!-- <script src="assets/js/ajax-contact.js"></script> -->
     <script src="assets/js/plugins/ajax-mailchimp.js"></script>
     <script src="assets/js/plugins/aos.js"></script>
     <script src="assets/js/plugins/scroll-up.js"></script>
