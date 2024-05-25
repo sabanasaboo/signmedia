@@ -15880,13 +15880,13 @@ button:focus {
 .about-thumb {
   padding: 75px 10px;
   border: 1px solid #eaedf9;
-  background-color: #ffffff;
+  background-color: aliceblue;
   border-radius: 15px;
   text-align: center;
 }
-.about-thumb img {
+/* .about-thumb img {
   border-radius: inherit;
-}
+} */
 
 .about-cards {
   margin-bottom: -30px;
@@ -16989,7 +16989,7 @@ button:focus {
 }
 
 .blog-grid-content {
-  padding: 30px 30px;
+  padding: 20px 20px;
   max-width: 390px;
   margin: 0 auto;
 }
@@ -19211,7 +19211,9 @@ button:focus {
 }
 
 
-
+.title-abt{
+  color: #021282;
+}
 
 
 
