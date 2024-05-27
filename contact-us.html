@@ -484,7 +484,8 @@
         btn.textContent = 'loading...'
         let response = await fetch('http://localhost:3000/smiEmail', {
             method: 'POST',
-            body: Object.fromEntries(formData.entries())
+            body: JSON.stringify(Object.fromEntries(formData.entries())),
+            headers:{ "Content-type": "application/json"}
         })
         // .then(response => response.json()) // assuming the server returns JSON
         // .then(data => {
