@@ -485,9 +485,7 @@
         let response = await fetch('https://smi-backend-2.onrender.com/smiEmail', {
             method: 'POST',
             body: JSON.stringify(Object.fromEntries(formData.entries())),
-            headers:{
-                'Content-Type':'application/json'
-            }
+            headers:{ "Content-type": "application/json"}
         })
         // .then(response => response.json()) // assuming the server returns JSON
         // .then(data => {
