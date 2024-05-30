@@ -491,6 +491,7 @@
         // .then(data => {
             // Handle the server response data here
             await setTimeout(()=>{btn.textContent = response.ok?'Sended': 'Retry'},3000)
+            response.ok?form.reset():0;
             setTimeout(()=>{btn.textContent='Submit'},7000)
             
             console.log('Server Response:', response);
