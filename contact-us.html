@@ -482,9 +482,12 @@
         }
         
         btn.textContent = 'loading...'
-        let response = await fetch('http://localhost:3000/smiEmail', {
+        let response = await fetch('https://smi-backend-2.onrender.com/smiEmail', {
             method: 'POST',
-            body: Object.fromEntries(formData.entries())
+            body: JSON.stringify(Object.fromEntries(formData.entries())),
+            headers:{
+                'Content-Type':'application/json'
+            }
         })
         // .then(response => response.json()) // assuming the server returns JSON
         // .then(data => {
