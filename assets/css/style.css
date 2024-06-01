@@ -1,79 +1,5 @@
 @charset "UTF-8";
-/*-------------------------------------------------------------
 
-  #  Template Name: Pringo - Digital Marketing Bootstrap 5 Template
-  #  Author   Name: 
-  #  Version: 1.4
-
--------------------------------------------------------------
-
-  #   CSS INDEX
-========================================================
-
-   [ 01. Bootstrap CSS ]
-
-   [ 02. Template default CSS ]
-
-   [ 03. header CSS ]
-
-   [ 04. header top CSS ]
-
-   [ 05. main menu CSS ]
-
-   [ 06. sub menu CSS ]
-
-   [ 07. hero section CSS ]
-
-   [ 08. brand logo CSS ]
-
-   [ 09. service card CSS ]
-
-   [ 10. working process CSS ]
-
-   [ 11. about us CSS ]
-
-   [ 12. case studies CSS ]
-
-   [ 13. team CSS ]
-
-   [ 14. faq CSS ]
-
-   [ 15. accordion CSS ]
-
-   [ 16. testimonial CSS ]
-
-   [ 17. blog CSS ]
-
-   [ 18. footer CSS ]
-
-   [ 19. bread crumb CSS ]
-
-   [ 20. service page CSS ]
-
-   [ 21. case details CSS ]
-
-   [ 22. comment form CSS ]
-
-   [ 23. blog details CSS ]
-
-   [ 24. contact form CSS ]
-
-   [ 25. page not found CSS ]
-
-
-   [ The End ]
-
-
---------------------------------------------*/
-/*--------------------------------------
-/*  [ 01. Bootstrap CSS ]
-----------------------------------------*/
-/*!
- * Bootstrap  v5.2.3 (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Copyright 2011-2022 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;family=Ruda:wght@400;500;600;700;800;900&amp;display=swap");
 :root {
   --bs-blue: #02126a;
@@ -15279,8 +15205,8 @@ button:focus {
 }
 
 .brand-logo1{
-  width: 180px;
-  height: 95px;
+  width: 130px;
+  height: 66px;
   /* object-fit: cover; */
 }
 
@@ -15880,13 +15806,13 @@ button:focus {
 .about-thumb {
   padding: 75px 10px;
   border: 1px solid #eaedf9;
-  background-color: #ffffff;
+  background-color: aliceblue;
   border-radius: 15px;
   text-align: center;
 }
-.about-thumb img {
+/* .about-thumb img {
   border-radius: inherit;
-}
+} */
 
 .about-cards {
   margin-bottom: -30px;
@@ -16989,7 +16915,7 @@ button:focus {
 }
 
 .blog-grid-content {
-  padding: 30px 30px;
+  padding: 20px 20px;
   max-width: 390px;
   margin: 0 auto;
 }
@@ -17313,6 +17239,11 @@ button:focus {
 .footer-widget .footer-logo {
   display: block;
   /* margin-bottom: 40px; */
+
+  width: 150px;
+  height: 70px;
+  /* margin-left: 0px; */
+  margin-bottom: 12px;
 }
 .footer-widget p {
   font-family: "Roboto", sans-serif;
@@ -19023,7 +18954,7 @@ button:focus {
   color: #020e55;
 }
 .col:hover {
-  background-color: #007bff; 
+  /* background-color: #007bff;  */
   color: #fff; 
 }
 
@@ -19211,8 +19142,10 @@ button:focus {
 }
 
 
+.title-abt{
+  color: #021282;
+}
 
-  
 
 
 
