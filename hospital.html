@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signmedia info Tech.</title>
-
-
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/logo/smi-logo.jpeg" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
 
     <link rel="stylesheet" href="assets/css/vendor/icofont.min.css" />
     <link rel="stylesheet" href="assets/css/plugins/animate.min.css" />
@@ -16,112 +17,135 @@
     <link rel="stylesheet" href="assets/css/plugins/aos.css" />
     <link rel="stylesheet" href="assets/css/plugins/selectric.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
-    <style>
-        .service-details-list ul li{
-            list-style-type: disc !important;
-        }
-        .service-details-list ul {
-            padding: 0 0 0 15px;
-        }
-    </style>
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 </head>
 
 
 <body>
-   <!-- Modal -->
-   <div class="modal offcanvas-modal fade" id="offcanvas-modal">
-    <div class="modal-dialog offcanvas-dialog">
-        <div class="modal-content">
-            <div class="modal-header offcanvas-header">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-          
-            <!-- offcanvas-menu start -->
-            <nav id="offcanvas-menu" class="offcanvas-menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                        <!-- add your sub menu here -->
-                    </li>
-                    <li>
-                        <a href="about-us.html">About Us</a>
-                    </li>
-                    <li>
-                        <a href="service-details.html">Services</a>
-                    </li>
+    <!-- Modal -->
+    <div class="modal offcanvas-modal fade" id="offcanvas-modal">
+        <div class="modal-dialog offcanvas-dialog">
+            <div class="modal-content">
+                <div class="modal-header offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+         
+                <!-- offcanvas-menu start -->
+                <nav id="offcanvas-menu" class="offcanvas-menu">
+
+                    <img src="assets/images/logo/smi-logo.jpeg"   class="brand-logo1" alt="brand logo" />
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                            <!-- add your sub menu here -->
+                        </li>
+                        <li>
+                            <a href="about-us.html">About Us</a>
+                        </li>           
+                        <li>
+                            <a href="javascript:void(0)">Services</a>
+                            <ul>
+                                <li>
+                                    <li>
+                                        <a class="sub-menu-link" href="digitalmarket.html">Digital Marketing</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-menu-link" href="seo.html">SEO Consultancy</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-menu-link" href="webdesign.html">Web Design & Development</a>
+                                    </li>
+                                    <li>
+                                        <a class="sub-menu-link" href="socialmedia.html">Social Media Optimization</a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="portfolio.html">Portfolio</a>
+                        </li>                                          
+                        <li>
+                            <a href="contact-us.html">Contact</a>
+                        </li>
+                    </ul>
+
                   
-                    <li>
-                        <a href="portfolio.html">Portfolio</a>
-                    </li>
-                    
-                   
-                    <li>
-                        <a href="contact-us.html">Contact</a>
-                    </li>
-                </ul>
+                </nav>
+                <!-- offcanvas-menu end -->
 
-              
-            </nav>
-            <!-- offcanvas-menu end -->
-
-            <p class="text-gradient mt-3">Let us grow your website traffic.</p>
-        </div>
-    </div>
-</div>
-
-<header class="header">
-    <div class="header-top bg-primary">
-        <div class="container">
-           
-        </div>
-    </div>
-    <div id="active-sticky" class="header-bottom"  style="background-color: #02126a;">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col">
-                    <a href="index.html" class="brand-logo">
-                        <img src="assets/images/logo/smi-logo.jpeg"   class="brand-logo1" alt="brand logo" />
-                    </a>
-                </div>
-                <div class="col-auto">
-                 
-
-                    <button type="button" class="btn btn-warning offcanvas-toggler" data-bs-toggle="modal" data-bs-target="#offcanvas-modal">
-                        <span class="line"></span>
-                        <span class="line"></span>
-                        <span class="line"></span>
-                    </button>
-                    <nav class="d-none d-lg-block">
-                        <ul class="main-menu text-end">
-                            <li class="main-menu-item">
-                                <a class="main-menu-link" href="index.html">Home</a>
-                            </li>
-                            <li class="main-menu-item">
-                                <a class="main-menu-link" href="about-us.html">About Us</a>
-                            </li>
-                            <li class="main-menu-item">
-                                <a class="main-menu-link" href="service-details.html">Services</a>
-                            </li>
-                            <li class="main-menu-item">
-                                <a class="main-menu-link" href="portfolio.html">Portfolio</a>
-                            </li>
-                            
-                            <li class="main-menu-item">
-                                <a class="main-menu-link" href="contact-us.html">Contacts</a>
-                            </li>
-                            <li class="main-menu-item">
-                           
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                <p class="text-gradient mt-3">Let us grow your website traffic.</p>
             </div>
         </div>
     </div>
 
-</header>
+    <header class="header">
+        <div class="header-top bg-primary">
+            <div class="container">
+               
+            </div>
+        </div>
+        <div id="active-sticky" class="header-bottom"  style="background-color: #02126a;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <a href="index.html" class="brand-logo">
+                            <img src="assets/images/logo/smi-logo.jpeg"   class="brand-logo1" alt="brand logo" />
+                        </a>
+                    </div>
+                    <div class="col-auto">
+                     
 
+                        <button type="button" class="btn btn-warning offcanvas-toggler" data-bs-toggle="modal" data-bs-target="#offcanvas-modal">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                        </button>
+                    
+                        <nav class="d-none d-lg-block">
+                            <ul class="main-menu text-end">
+                                <li class="main-menu-item">
+                                    <a class="main-menu-link" href="index.html">Home</a>
+                                </li>
+                                <li class="main-menu-item">
+                                    <a class="main-menu-link" href="about-us.html">About Us</a>
+                                </li>
+                            
+                                <li class="main-menu-item">
+                                    <a class="main-menu-link" href="#">Services</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a class="sub-menu-link" href="digitalmarket.html">Digital Marketing</a>
+                                        </li>
+                                        <li>
+                                            <a class="sub-menu-link" href="seo.html">SEO Consultancy</a>
+                                        </li>
+                                        <li>
+                                            <a class="sub-menu-link" href="webdesign.html">Web Design & Development</a>
+                                        </li>
+                                        <li>
+                                            <a class="sub-menu-link" href="socialmedia.html">Social Media Optimization</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="main-menu-item">
+                                    <a class="main-menu-link" href="portfolio.html">Portfolio</a>
+                                </li>
+                                
+                                <li class="main-menu-item">
+                                    <a class="main-menu-link" href="contact-us.html">Contacts</a>
+                                </li>
+                                <li class="main-menu-item">
+                               
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
 
     <!-- bread crumb section start -->
 
@@ -131,11 +155,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h2 class="title text-center">Service Details</h2>
+                    <h2 class="title text-center">Hospital Marketing</h2>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
                             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active" aria-current="page"><span>Service Details</span></li>
+                            <li class="breadcrumb-item active" aria-current="page"><span>Hospital Marketing</span></li>
                         </ol>
                     </nav>
                 </div>
@@ -144,91 +168,46 @@
     </section>
 
 
-    <!-- bread crumb section end -->
+   
+<br><br>
 
-    <!-- service carousel start -->
 
-    <div class="service-carousel-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="service-carousel position-relative">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="service-carousel-content">
-                                        <img class="service-img" src="assets/images/service/1.jpg" alt="images-not_found" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- If we need navigation buttons -->
-                        <div class="d-none d-md-block">
-                            <div class="service-carousel swiper-button-prev">
-                                <i class="icofont-double-left"></i>
-                            </div>
-                            <div class="service-carousel swiper-button-next">
-                                <i class="icofont-double-right"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- service carousel end -->
+
+
+
+
 
     <!-- service details start -->
     <section class="service-details-section">
         <div class="container">
-            <div class="row mb-n7">
-                <div class="col-12 mb-7">
-                    <div class="service-details">
-                        <div class="service-details-list">
-                            <h2 class="title">CUSTOM SOFTWARE DEVELOPMENT</h2>
-                            <p>
-                                Custom software development with rich enterprise business experience, we
-                                    develop customized solutions that meet the
-                                    specific needs of the business
-                               <ul style="list-style-type: disc;">
-                                    <li>CRM</li>
-                                    <li>ERP</li>
-                                    <li>HR Management</li>
-                                    <li>Travel Management software cum flight &</li>
-                                    <li>Hotel Booking</li>
-                                    <li>Hotel Management sooftware</li>
-                                    <li>and more Industries based on customised</li>
-                               </ul>
-                               
-                            </p>
-                           
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="service-details">
                 <div class="service-details-list">
                     <div class="row mb-n7">
                         <div class="col-lg-7 mb-7">
-                            <h2 class="title">WEB & MOBILE APP DEVELOPMENT</h2>
-                            <p>
-                                SMI provides the full range of web and
-                                Mobile app development services needed
-                                to create and launch powerful business
-                                solutions and successful SAAS Platform
-                                Dive into the world of mobility with your
-                                unique ideas that turn into an amazing
-                                application for your business needs
-                               <ul style="list-style-type: disc;">
-                                <li> E commerce</li>
-                               <li> Classified</li>
-                               <li> Real estate</li>
-                               <li> Manpower</li>
-                               <li> and more</li>
-                               </ul>
+                            <h2 class="title ">Elevate Your Healthcare Services</h2>
+                            <p class="smi-fontsize">
+                                Welcome to Sign Media InfoTech, where we specialize in transforming healthcare facilities through innovative marketing strategies.
                             </p>
+                            <h5 class="bluecolor">What is Hospital Marketing?</h5>
+                            <p class="smi-fontsize">
+                                Hospital marketing involves crafting and executing strategic promotional activities designed to attract patients, enhance the hospital's reputation, and ensure patient satisfaction. Our goal is to help your healthcare facility stand out in a competitive market, build trust within your community, and drive sustainable growth.
+                            </p>
+                            <!-- <h5 class="bluecolor">Why Choose Our Hospital Marketing Services?</h5>
+                            <p class="smi-fontsize">
+                                In the healthcare industry, building a strong, positive brand is crucial. At [Your Digital Marketing Agency Name], we understand the unique challenges hospitals face and offer tailored solutions to meet your specific needs. Our comprehensive approach covers:
+                               <ul style="list-style-type: disc; " class="smi-fontsize" >
+                                    <li >Branding and Identity</li>
+                                    <li>Digital Marketing</li>
+                                    <li>Patient Engagement</li>
+                                    <li>Referral Programs</li>
+                                    <li>Service Line Marketing</li>
+                                    <li>Enhancing Patient Experience</li>
+                                    <li>Community Outreach</li>
+                               </ul>
+                               
+                            </p> -->
                            
                         </div>
                         <div class="col-lg-5 mb-7">
@@ -238,34 +217,6 @@
                 </div>
             </div>
 
-            <div class="service-details">
-                <div class="service-details-list">
-                    <div class="row mb-n7">
-                        <div class="col-12 mb-7">
-                            <h2 class="title">DIGITAL MARKETING SERVICES</h2>
-                            <p>
-                                SMI is a leading digital marketing
-                                agency to help you customize your
-                                brand and business with digital
-                                marketing services
-                                <ul style="list-style-type: disc;"><li>SEO</li>
-                                    <li>SMM</li>
-                                    <li>SEM</li>
-                                    <li>SMS Marketing</li>
-                                    <li>Whatsapp Marketing</li>
-                                    <li>Media Marketing - Offline & Online</li>
-                                    <li>Video creation</li>
-                                    <li>Branding Design</li>
-                                    <li>Influencer marketing </li>
-                                    <li>Bulk sms and WhatsApp software</li>
-                                    <li>Logo creation </li>
-                                    <li>Template and brochure design</li>     
-                                    <li>Branding Design</li></ul>                   
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
 
             <div class="service-details">
                 <div class="service-details-list">
@@ -275,55 +226,70 @@
                         </div>
 
                         <div class="col-12 col-lg-6 mb-7">
-                            <h2 class="title">WEB DESIGN & DEVELOPMENT</h2>
-                            <p>
-                               <ul style="list-style-type: disc;"><li> Static Page</li>
-                                <li> Dynamic Page</li>
-                                <li> Content Management</li>
-                                <li> Web Hosting and Maintenance</li>
-                                <li> Mobile Responsive Website</li></ul>
-                                
+                            <h5 class="bluecolor">Why Choose Our Hospital Marketing Services</h5>
+                            <p class="smi-fontsize">
+                                In the healthcare industry, building a strong, positive brand is crucial. At [Your Digital Marketing Agency Name], we understand the unique challenges hospitals face and offer tailored solutions to meet your specific needs. Our comprehensive approach covers:
+                               <ul style="list-style-type: disc; " class="smi-fontsize" >
+                                    <li >Branding and Identity</li>
+                                    <li>Digital Marketing</li>
+                                    <li>Patient Engagement</li>
+                                    <li>Referral Programs</li>
+                                    <li>Service Line Marketing</li>
+                                    <li>Enhancing Patient Experience</li>
+                                    <li>Community Outreach</li>
+                               </ul>
+                               
                             </p>
-
-                            <div class="ht-progress" data-offset="100%">
-                                <div class="ht-progress-item">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                                            <span>60%</span>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">CUSTOM SOFTWARE DEVELOPMENT</h4>
-                                </div>
-                                <div class="ht-progress-item">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
-                                            <span>90%</span>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">WEB & MOBILE APP DEVELOPMENT</h4>
-                                </div>
-
-                                <div class="ht-progress-item">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-                                            <span>80%</span>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">DIGITAL MARKETING SERVICES</h4>
-                                </div>
-                                <div class="ht-progress-item">
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                                            <span>85%</span>
-                                        </div>
-                                    </div>
-                                    <h4 class="title">WEB DESIGN & DEVELOPMENT</h4>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+<!-- 8888888888888888888888888888888888888888888888888888888888 -->
+
+<div class="service-details">
+    <div class="service-details-list">
+        <div class="row mb-n7">
+            <h2 class="title ">How Hospital Marketing Can Help You Grow</h2>
+
+            <div class="col-lg-6 mb-7">
+                
+
+                <ul>
+                    <li class="smi-fontsize"><strong>Increase Patient Acquisition:</strong> Reach and attract more patients through targeted campaigns and digital advertising.</li>
+                    <li class="smi-fontsize"><strong>Enhance Online Presence:</strong> Optimize your website for search engines and publish engaging content to improve visibility.</li>
+                    <li class="smi-fontsize"><strong>Build and Maintain Trust:</strong> Manage online reviews and share success stories to build credibility.</li>
+
+                </ul>
+                
+                <!-- <p class="smi-fontsize">
+                    Welcome to Sign Media InfoTech, where we specialize in transforming healthcare facilities through innovative marketing strategies.
+                </p>
+                <h5 class="bluecolor">What is Hospital Marketing?</h5> -->
+                
+               
+            </div>
+            <div class="col-lg-6 mb-7">
+                
+              <ul>
+                <li class="smi-fontsize"><strong>Boost Community Involvement:</strong> Organize health events and collaborate with local organizations for joint initiatives.</li>
+                <li  class="smi-fontsize"><strong>Promote Specific Services:</strong> Highlight and advertise specialized services to attract patients needing those treatments.</li>
+                <li class="smi-fontsize"><strong>Leverage Data Analytics:</strong> Use data analytics to measure campaign effectiveness and tailor marketing efforts based on patient demographics.</li>
+              </ul>
+            </div>
+            <div>
+                <p  class="smi-fontsize">By implementing these comprehensive hospital marketing strategies, you can effectively communicate your strengths, attract new patients, and retain existing ones, leading to improved patient outcomes and hospital growth.
+                </p>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<br/>
+<!-- 8888888888888888888888888888888888888888888888888888888888 -->
+
+       
 
         
             <div class="text-center mt-5">
