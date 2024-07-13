@@ -19449,3 +19449,16 @@ color: #021282;
     object-fit: cover;
 }
 
+@media (max-width: 600px) {
+  .rectangle-box {
+      flex-direction: column;
+      align-items: stretch;
+  }
+
+  .rectangle-box button {
+      margin: 10px 0;
+      font-size: 14px;
+      
+  }
+}
+
