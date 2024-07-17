@@ -235,7 +235,7 @@
                 <button onclick="showSection('influ')"> Influencer Reels</button>
             </div>
         
-            <section id="client" class="page-section">
+            <section id="client" class="page-section "  >
                 <h2 class="infra-title">Client</h2>
 
 
@@ -270,86 +270,141 @@
 
                    
 
-                <!-- <div class="pagination">
-                    <a href="#">&laquo;</a>
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">&raquo;</a>
-                </div> -->
+                    <!-- <div class="pagination">
+                     <a href="#" id="prevPage">&laquo;</a>
+                     <a href="#" class="pagination-link active" data-page="1">1</a>
+                     <a href="#" class="pagination-link" data-page="2">2</a>                     
+                     <a href="#" id="nextPage">&raquo;</a>
+                 </div> -->
             </section>
-        
-            <section id="templates" class="page-section hidden">
-                <h2 class="infra-title">Templates</h2>
-                <div class="row mb-4">
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                     <!-- <a href="#" target="_blank"> -->
-                        <div class="box-p">                         
-                            <img src="assets/images/templates/coral ecr.jpg" alt="Image 1" class="centered-image img-fluid">                                                                      
-                        </div>
 
-                       
-                    <!-- </a> -->
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                     <!-- <a href="#" target="_blank"> -->
-                        <div class="box-p">                         
-                            <img src="assets/images/templates/tambaramm.jpg" alt="Image 1" class="centered-image img-fluid">                                                                      
-                        </div>
-                    <!-- </a> -->
-                    </div>
-                    <!-- <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <div class="box-p">
-                            <img src="assets/images/mtn_logo.jpg" alt="Image 3" class="centered-image img-fluid">
-                        </div>
-                    </div> -->
-                </div>
-                <!-- <div class="pagination">
-                    <a href="#">&laquo;</a>
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">&raquo;</a>
-                </div> -->
-            </section>
+            <section id="templates" class="page-section hidden">
+               <h2 class="infra-title">Templates</h2>
+               <div class="row mb-4" id="templateItems">
+                   <div class="col-12 col-md-6 col-lg-4 mb-4">
+                       <div class="box-p">                         
+                           <img src="assets/images/templates/coral ecr.jpg" alt="Image 1" class="centered-image img-fluid">                                                                      
+                       </div>
+                   </div>
+                  
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                   <!-- <a href="#" target="_blank"> -->
+                      <div class="box-p">                         
+                          <img src="assets/images/templates/tambaramm.jpg" alt="Image 1" class="centered-image img-fluid">                                                                      
+                      </div>
+                  <!-- </a> -->
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                      <div class="box-p">
+                          <img src="assets/images/templates/addsbazar-ad.jpg" alt="Image 3" class="centered-image img-fluid">
+                      </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                   <!-- <a href="#" target="_blank"> -->
+                      <div class="box-p">                         
+                          <img src="assets/images/templates/mtn-ad2.jpg" alt="Image 1" class="centered-image img-fluid">                                                                      
+                      </div>
+                  <!-- </a> -->
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                   <!-- <a href="#" target="_blank"> -->
+                      <div class="box-p">                         
+                          <img src="assets/images/templates/smi-ad.jpg" alt="Image 1" class="centered-image img-fluid">                                                                      
+                      </div>
+                  <!-- </a> -->
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                      <div class="box-p">
+                          <img src="assets/images/templates/propertystores-kodaikanal.jpg" alt="Image 3" class="centered-image img-fluid">
+                      </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                   <!-- <a href="#" target="_blank"> -->
+                      <div class="box-p">                         
+                          <img src="assets/images/templates/addsbazar-ad2.jpg" alt="Image 1" class="centered-image img-fluid">                                                                      
+                      </div>
+                  <!-- </a> -->
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                   <!-- <a href="#" target="_blank"> -->
+                      <div class="box-p">                         
+                          <img src="assets/images/templates/mtn-ad5.jpg" alt="Image 1" class="centered-image img-fluid">                                                                      
+                      </div>
+                  <!-- </a> -->
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                      <div class="box-p">
+                          <img src="assets/images/templates/smi-ad2.jpg" alt="Image 3" class="centered-image img-fluid">
+                      </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                   <!-- <a href="#" target="_blank"> -->
+                      <div class="box-p">                         
+                          <img src="assets/images/templates/addsbazar-ad3.jpg" alt="Image 1" class="centered-image img-fluid">                                                                      
+                      </div>
+                  <!-- </a> -->
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                   <!-- <a href="#" target="_blank"> -->
+                      <div class="box-p">                         
+                          <img src="assets/images/templates/mtn-ad3.jpg" alt="Image 1" class="centered-image img-fluid">                                                                      
+                      </div>
+                  <!-- </a> -->
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-4">
+                      <div class="box-p">
+                          <img src="assets/images/templates/mtn-ad4.jpg" alt="Image 3" class="centered-image img-fluid">
+                      </div>
+                  </div>
+               </div>
+               <div class="pagination">
+                   <a href="#" id="prevPage">&laquo;</a>
+                   <a href="#" class="pagination-link active" data-page="1">1</a>
+                   <a href="#" class="pagination-link" data-page="2">2</a>
+                   
+                   
+                   <a href="#" id="nextPage">&raquo;</a>
+               </div>
+               </div>
+           </section>
         
             <section id="video" class="page-section hidden">
                 <h2 class="infra-title">Videos</h2>
                 <div class="row mb-4">
                     <div class="col-12 col-md-6 col-lg-4 mb-4">
-                     <a href="https://youtu.be/B6xUvkkVdSI?si=wqJtogxkiG6l60b-" target="_blank">
+                     <a href="https://youtu.be/Ct-1glYUfe0?si=QU6bOfeBJG13ea47" target="_blank">
                         <div class="box-p">                         
-                            <img src="assets/images/videos/addsbzar-video.png" alt="Image 1" class="centered-image img-fluid">                                                                      
+                            <img src="assets/images/videos/youtube-vd1.png" alt="Image 1" class="centered-image img-fluid">                                                                      
                         </div>
                     </a>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4 mb-4">
                      <a href="https://youtu.be/VGNoD-8SVSM?si=BTduKyzkdiuZRn7U" target="_blank">
                         <div class="box-p">                         
-                            <img src="assets/images/videos/addsbazar-video2.png" alt="Image 1" class="centered-image img-fluid">                                                                      
+                            <img src="assets/images/videos/youtube-vd2.png" alt="Image 1" class="centered-image img-fluid">                                                                      
                         </div>
                     </a>
                     </div>
-                    <!-- <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <div class="box-p">
-                            <img src="assets/images/mtn_logo.jpg" alt="Image 3" class="centered-image img-fluid">
+                    <div class="col-12 col-md-6 col-lg-4 mb-4">
+                     <a href="https://youtu.be/YuziDle6dSU?si=lUGKCM2fqVdbJ1OM" target="_blank">
+                        <div class="box-p">                         
+                            <img src="assets/images/videos/youtube-vd3.png" alt="Image 1" class="centered-image img-fluid">                                                                      
                         </div>
-                    </div> -->
+                    </a>
+                    </div>
+                   
                 </div>
                 <!-- <div class="pagination">
-                    <a href="#">&laquo;</a>
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">&raquo;</a>
-                </div> -->
+                  <a href="#" id="prevPage">&laquo;</a>
+                  <a href="#" class="pagination-link active" data-page="1">1</a>
+                  <a href="#" class="pagination-link" data-page="2">2</a>                     
+                  <a href="#" id="nextPage">&raquo;</a>
+              </div> -->
             </section>
+
         
             <section id="influ" class="page-section hidden">
                 <h2 class="infra-title">Influencer Reels</h2>
@@ -378,14 +433,11 @@
                     </div> -->
                 </div>
                 <!-- <div class="pagination">
-                    <a href="#">&laquo;</a>
-                    <a href="#" class="active">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">&raquo;</a>
-                </div> -->
+                  <a href="#" id="prevPage">&laquo;</a>
+                  <a href="#" class="pagination-link active" data-page="1">1</a>
+                  <a href="#" class="pagination-link" data-page="2">2</a>                     
+                  <a href="#" id="nextPage">&raquo;</a>
+              </div> -->
             </section>
             
         </div>
@@ -564,6 +616,62 @@
          </div>
          <!-- coppy right end -->
       </footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const itemsPerPage = 6; // Number of items to show per page
+    const items = document.querySelectorAll('#templateItems .col-12');
+    const totalPages = Math.ceil(items.length / itemsPerPage);
+    let currentPage = 1;
+
+    function showPage(page) {
+        // Hide all items
+        items.forEach((item, index) => {
+            item.style.display = 'none';
+        });
+
+        // Show items for the current page
+        const start = (page - 1) * itemsPerPage;
+        const end = start + itemsPerPage;
+        for (let i = start; i < end && i < items.length; i++) {
+            items[i].style.display = 'block';
+        }
+
+        // Update pagination active link
+        document.querySelectorAll('.pagination-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        document.querySelector(`.pagination-link[data-page="${page}"]`).classList.add('active');
+    }
+
+    function handlePageChange(event) {
+        event.preventDefault();
+        if (event.target.classList.contains('pagination-link')) {
+            currentPage = Number(event.target.getAttribute('data-page'));
+        } else if (event.target.id === 'prevPage') {
+            if (currentPage > 1) {
+                currentPage--;
+            }
+        } else if (event.target.id === 'nextPage') {
+            if (currentPage < totalPages) {
+                currentPage++;
+            }
+        }
+        showPage(currentPage);
+    }
+
+    // Initialize the first page
+    showPage(currentPage);
+
+    // Add event listeners to pagination links
+    document.querySelectorAll('.pagination a').forEach(link => {
+        link.addEventListener('click', handlePageChange);
+    });
+});
+
+
+</script>
+      
       <!-- Scripts -->
       <script src="assets/js/vendor/modernizr-3.11.2.min.js"></script>
       <script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
