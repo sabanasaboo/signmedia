@@ -15397,13 +15397,15 @@ button:focus {
 .service-content .title {
   color: #02126a;
   font-weight: 700;
-  line-height: 0.8;
+  line-height: 1.2;
   margin-bottom: 25px;
   font-size: 25px;
 }
 @media screen and (max-width: 1199px) {
   .service-content .title {
     font-size: 20px;
+  line-height: 1.2;
+
   }
 }
 .service-content p {
@@ -19079,6 +19081,7 @@ button:focus {
   .skills .skills-flex-container .row .box-c {
     flex: 1 1 100%;
     padding: 15px;
+    margin-left: 10px;     
   }
   .skills .skills-flex-container .row .box-c .image .img-c {
     max-width: 60%;
@@ -19154,7 +19157,7 @@ button:focus {
 }
 
 .card-1 {
-  height: 250px;
+  /* height: 250px; */
   width: 100%;
   background-color: #1a33a7;
   /* opacity: 0.5;
@@ -19360,7 +19363,7 @@ color: #021282;
   margin-right: 15px; }
 
   .li-style{
-    font-size: x-large;
+    font-size:16px;
   }
 
  .package-price{
