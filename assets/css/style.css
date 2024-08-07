@@ -18710,7 +18710,7 @@ button:focus {
 .contact-form-card .title {
   color: #02126a;
   line-height: 1.857;
-  font-size: 35px;
+  font-size: 25px;
 }
 @media screen and (max-width: 767px) {
   .contact-form-card .title {
@@ -18795,11 +18795,11 @@ button:focus {
   line-height: 1;
   font-weight: 700;
   color: #02126a;
-  font-size: 20px;
+  font-size: 17px;
 }
 @media screen and (min-width: 1200px) {
   .contact-media .content .number {
-    font-size: 22px;
+    font-size: 20px;
   }
 }
 .contact-media .content a.number:hover {
