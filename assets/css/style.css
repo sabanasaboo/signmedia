@@ -18224,7 +18224,7 @@ button:focus {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin: 0 38px 0 10px;
+  margin: 0 38px 0 4px;
   font-size: 15px;
   line-height: 38px;
   color: #596190;
